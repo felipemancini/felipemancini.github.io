@@ -1,44 +1,67 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Felipemancini.GitHub.io by felipemancini</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!DOCTYPE html> 
+<html> 
+	<head>
+  <meta charset="UTF-8">	
+	<title>Phrasal Verbs</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<script src="../js/jquery-1.7.1.min.js"></script>
+	<!-- <script src="../js/jquery.mobile-1.0.1.min.js"></script> -->
 
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="">View On GitHub</a></li>
-        </nav>
-      </div><!-- end header -->
-
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>Felipemancini.GitHub.io</h1>
-          <p></p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/felipemancini">felipemancini</a></span>
-          <span class="credits right">Hosted on GitHub Pages</span>
-        </div>
-
-      </section>
-
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+<script type="text/javascript">
+$(document).ready(function() {
     
-  </body>
+    $("#check").click(function(){
+    	
+    	var question1 = $("#question1 option:selected").val();
+    	var status = 'wrong';
+
+    	if(question1 == 'opt2'){
+    		status = 'correct!';
+    	}
+    	$("#statusQ1").text(status);
+
+    });
+
+});
+</script>
+
+</head> 
+
+<body> 
+<div id="page">
+
+<select id="question1">
+	<option value="opt1">option 1</option>
+	<option value="opt2">option 2</option>
+	<option value="opt3">option 3</option>
+</select>
+
+This question is about option2
+<span id="statusQ1"></span>
+<br />
+
+<select id="question2">
+	<option value="opt1">option 1</option>
+	<option value="opt2">option 2</option>
+	<option value="opt3">option 3</option>
+</select>
+
+This questions is about option3
+
+<br />
+
+<select id="question3">
+	<option value="x1">option 1</option>
+	<option value="x2">option 2</option>
+	<option value="x3">option 3</option>
+</select>
+
+This question is about option1
+
+<br />
+<input type="button" id="check" value="check">
+
+</div><!-- /page -->
+</body>
 </html>
