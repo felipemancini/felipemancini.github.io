@@ -15,10 +15,13 @@ $(document).ready(function() {
     	
     	var question1 = $("#question1 option:selected").val();
     	var status = 'wrong';
+    	var style = 'red';
 
     	if(question1 == 'opt2'){
     		status = 'correct!';
+    		style = 'green';
     	}
+    	$("#statusQ1").attr('class',style);
     	$("#statusQ1").text(status);
 
     });
@@ -30,6 +33,34 @@ $(document).ready(function() {
 body {
 	background: #000;
 	color: #fff;
+}
+
+h1 {
+	font-size: 22px;
+	text-align: center;
+}
+
+.green {
+	text-transform: uppercase;
+	color: green;
+	font-weight: bold;
+}
+
+.red {
+	text-transform: uppercase;
+	color: red;
+	font-weight: bold;
+}
+
+#check {
+	background: #fff;
+	border: 1px solid #fff;
+	width: 100px;
+	margin: 0 auto;
+	display: block;
+	height: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .question {
@@ -58,7 +89,7 @@ body {
 	</select>
 
 	to forgive someone and be friendly with them again after an argument or disagreement
-	<span id="statusQ1"></span>
+	<span id="statusQ1" class="red"></span>
 </div>
 
 <div class="question">
