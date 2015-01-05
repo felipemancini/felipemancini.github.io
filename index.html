@@ -16,15 +16,37 @@ $(document).ready(function() {
     $("#check").click(function(){
     	
     	var question1 = $("#question1 option:selected").val();
-    	var status = 'wrong';
-    	var style = 'red';
+    	var status1 = 'wrong';
+    	var style1 = 'red';
 
     	if(question1 == 'opt2'){
-    		status = 'correct!';
-    		style = 'green';
+    		status1 = 'correct!';
+    		style1 = 'green';
     	}
-    	$("#statusQ1").attr('class',style);
-    	$("#statusQ1").text(status);
+    	$("#statusQ1").attr('class',style1);
+    	$("#statusQ1").text(status1);
+
+    	var question2 = $("#question2 option:selected").val();
+    	var status2 = 'wrong';
+    	var style2 = 'red';
+
+    	if(question2 == 'opt3'){
+    		status2 = 'correct!';
+    		style2 = 'green';
+    	}
+    	$("#statusQ2").attr('class',style2);
+    	$("#statusQ2").text(status2);
+
+    	var question3 = $("#question3 option:selected").val();
+    	var status3 = 'wrong';
+    	var style3 = 'red';
+
+    	if(question3 == 'opt3'){
+    		status3 = 'correct!';
+    		style3 = 'green';
+    	}
+    	$("#statusQ3").attr('class',style3);
+    	$("#statusQ3").text(status3);
 
     });
 
@@ -39,9 +61,9 @@ $(document).ready(function() {
 <h1>Choose the correct meaning</h1>
 <div class="question">
 	<select id="question1">
-		<option value="opt1">Get up</option>
+		<option value="opt1">Get up to</option>
 		<option value="opt2">Make up</option>
-		<option value="opt3">Look up</option>
+		<option value="opt3">Chill out</option>
 	</select>
 
 	to forgive someone and be friendly with them again after an argument or disagreement
@@ -50,23 +72,23 @@ $(document).ready(function() {
 
 <div class="question">
 	<select id="question2">
-		<option value="opt1">Get up to</option>
-		<option value="opt2">Make up</option>
-		<option value="opt3">Look up</option>
+		<option value="opt1">Make up</option>
+		<option value="opt2">Chill out</option>
+		<option value="opt3">Get up to</option>
 	</select>
 
 	To do something
-	<span id="statusQ2"></span>
+	<span id="statusQ2" class="red"></span>
 </div>
 
 <div class="question">
 	<select id="question3">
-		<option value="opt1">Get up</option>
-		<option value="opt2">Make up</option>
-		<option value="opt3">Look up</option>
+		<option value="opt1">Make up</option>
+		<option value="opt2">Get up to</option>
+		<option value="opt3">Chill out</option>
 	</select>
 
-	to forgive someone and be friendly with them again after an argument or disagreement
+	To relax completely, or not allow things to upset you.
 	<span id="statusQ3"></span>
 </div>
 
