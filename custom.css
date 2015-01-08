@@ -21,7 +21,8 @@ h1 {
 }
 
 #buttons {
-	width: 204px;
+	width: 100%;
+	text-align: center;
 	margin: 0 auto;
 	display: block;
 }
