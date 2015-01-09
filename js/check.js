@@ -19,6 +19,12 @@ $(document).ready(function() {
     var n = pick(5, 0, 13);
     // console.log(obj); return false;
 
+    $("#question1 option:first-child").attr("selected", true);
+    $("#question2 option:first-child").attr("selected", true);
+    $("#question3 option:first-child").attr("selected", true);
+    $("#question4 option:first-child").attr("selected", true);
+    $("#question5 option:first-child").attr("selected", true);
+
     $("#q1").html(obj.question[n[0]].meaning);
     $("#q2").html(obj.question[n[1]].meaning);
     $("#q3").html(obj.question[n[2]].meaning);
