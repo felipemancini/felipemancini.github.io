@@ -25,24 +25,24 @@ $(document).ready(function() {
     $("#q4").html(obj.question[n[3]].meaning);
     $("#q5").html(obj.question[n[4]].meaning);
 
-    $(".opt1").html(obj.question[n[0]].answer);
-    $(".opt1").val(obj.question[n[0]].answer);
+    $(".opt1").html(obj.question[n[2]].answer);
+    $(".opt1").val(obj.question[n[2]].answer);
     $("#answerQ1").val(obj.question[n[0]].answer);
 
-    $(".opt2").html(obj.question[n[1]].answer);
-    $(".opt2").val(obj.question[n[1]].answer);
+    $(".opt2").html(obj.question[n[4]].answer);
+    $(".opt2").val(obj.question[n[4]].answer);
     $("#answerQ2").val(obj.question[n[1]].answer);
 
-    $(".opt3").html(obj.question[n[2]].answer);
-    $(".opt3").val(obj.question[n[2]].answer);
+    $(".opt3").html(obj.question[n[0]].answer);
+    $(".opt3").val(obj.question[n[0]].answer);
     $("#answerQ3").val(obj.question[n[2]].answer);
 
-    $(".opt4").html(obj.question[n[3]].answer);
-    $(".opt4").val(obj.question[n[3]].answer);
+    $(".opt4").html(obj.question[n[1]].answer);
+    $(".opt4").val(obj.question[n[1]].answer);
     $("#answerQ4").val(obj.question[n[3]].answer);
 
-    $(".opt5").html(obj.question[n[4]].answer);
-    $(".opt5").val(obj.question[n[4]].answer);
+    $(".opt5").html(obj.question[n[3]].answer);
+    $(".opt5").val(obj.question[n[3]].answer);
     $("#answerQ5").val(obj.question[n[4]].answer);
 
     $("#check").click(function(){
