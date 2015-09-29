@@ -6,20 +6,105 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/check.js"></script>
+	<link rel="stylesheet" href="custom.css" />
 	<!-- <script src="../js/jquery.mobile-1.0.1.min.js"></script> -->
     
-</head>
+</head> 
+
+<body> 
+<div id="page">
+
+<h1>Choose the correct Phrasal Verb</h1>
+<div class="question">
+	<select id="question1">
+		<option>Choose one</option>
+		<option class="opt1" value="Get up to">Get up to</option>
+		<option class="opt2" value="Make up">Make up</option>
+		<option class="opt3" value="Look up to">Look up to</option>
+		<option class="opt4" value="Pass out">Pass out</option>
+		<option class="opt5" value="Chill out">Chill out</option>
+	</select>
+
+	<span id="q1">To forgive someone and be friendly with them again after an argument or disagreement.</span>
+	<input id="answerQ1" type="hidden" value="Make up" />
+	<span id="statusQ1" class="red"></span>
+</div>
+
+<div class="question">
+	<select id="question2">
+		<option>Choose one</option>
+		<option class="opt1" value="Make up">Make up</option>
+		<option class="opt2" value="Pass out">Pass out</option>
+		<option class="opt3" value="Chill out">Chill out</option>
+		<option class="opt4" value="Look up to">Look up to</option>
+		<option class="opt5" value="Get up to">Get up to</option>
+	</select>
+
+	<span id="q2">To do something.</span>
+	<input id="answerQ2" type="hidden" value="Get up to" />
+	<span id="statusQ2" class="red"></span>
+</div>
+
+<div class="question">
+	<select id="question3">
+		<option>Choose one</option>
+		<option class="opt1" value="Make up">Make up</option>
+		<option class="opt2" value="Get up to">Get up to</option>
+		<option class="opt3" value="Look up to">Look up to</option>
+		<option class="opt4" value="Pass out">Pass out</option>
+		<option class="opt5" value="Chill out">Chill out</option>
+	</select>
+
+	<span id="q3">To relax completely, or not allow things to upset you.</span>
+	<input id="answerQ3" type="hidden" value="Chill out" />
+	<span id="statusQ3"></span>
+</div>
+
+<div class="question">
+	<select id="question4">
+		<option>Choose one</option>
+		<option class="opt1" value="Make up">Make up</option>
+		<option class="opt2" value="Get up to">Get up to</option>
+		<option class="opt3" value="Look up to">Look up to</option>
+		<option class="opt4" value="Pass out">Pass out</option>
+		<option class="opt5" value="Chill out">Chill out</option>
+	</select>
+
+	<span id="q4">To admire and respect someone.</span>
+	<input id="answerQ4" type="hidden" value="Look up to" />
+	<span id="statusQ4"></span>
+</div>
+
+<div class="question">
+	<select id="question5">
+		<option>Choose one</option>
+		<option class="opt1" value="Make up">Make up</option>
+		<option class="opt2" value="Get up to">Get up to</option>
+		<option class="opt3" value="Look up to">Look up to</option>
+		<option class="opt4" value="Pass out">Pass out</option>
+		<option class="opt5" value="Chill out">Chill out</option>
+	</select>
+
+	<span id="q5">To become unconscious for a short time, for example when ill, badly hurt, or drunk.</span>
+	<input id="answerQ5" type="hidden" value="Pass out" />
+	<span id="statusQ5"></span>
+</div>
+
+<div id="buttons">
+	<input type="button" id="refresh" value="refresh" onClick="history.go(0);">
+	<input type="button" id="check" value="check">
+</div>
+
+</div><!-- /page -->
 
 <script>
-
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-58534315-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 </body>
 </html>
